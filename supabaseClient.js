@@ -6,4 +6,4 @@ const supabaseConn = createClient(
     process.env.SUPABASE_SERVICE_ROLE
 );
 
-module.exports = supabaseConn;
+module.exports = supabaseConn; 
