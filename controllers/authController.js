@@ -21,7 +21,7 @@ exports.registerUser = async (req, res) => {
             return res.status(400).json({ error: error.message });
         }
 
-        return res.status(201).json({ message: 'Usuario creado exitosamente', user: data });
+        return res.status(200).json({ message: 'Usuario creado exitosamente', user: data });
     } catch (error) {
         console.error('Error en el registro del usuario:', error);
         return res.status(500).json({ error: 'Error interno del servidor' });
